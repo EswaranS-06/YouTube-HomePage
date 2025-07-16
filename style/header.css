@@ -1,0 +1,178 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid ;
+    border-bottom-color: rgb(235, 235, 235);
+}
+
+.left-section {
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-icon {
+    height: 20px;
+    margin-left: 24px;
+    margin-right: 24PX;
+}
+
+.youtube-logo {
+    height: 20px;
+}
+
+.middle-section {
+    flex: 1;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.sreach-bar {
+    flex:1;
+    height: 34px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba( 0, 0, 0, 0.05);
+}
+
+.sreach-bar::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+} 
+  
+.sreach-button {
+    height: 38px;
+    width: 66px;
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+    margin-right: 4px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba( 0, 0, 0, 0.05);
+}
+
+.sreach-button-icon {
+    height: 24px;
+    flex:1;
+}
+
+.voice-sreach,
+.upload-div,
+.youtube-apps-div,
+.notifications-div,
+.profile-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sreach-button .tooltip,
+.voice-sreach .tooltip,
+.upload-div .tooltip,
+.youtube-apps-div .tooltip,
+.notifications-div .tooltip,
+.profile-div .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-size: 12px;
+    top: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.sreach-button:hover .tooltip,
+.voice-sreach:hover .tooltip,
+.upload-div:hover .tooltip,
+.youtube-apps-div:hover .tooltip,
+.notifications-div:hover .tooltip,
+.profile-div:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-sreach {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: -1px;
+    margin-right: 4px;
+    background-color: rgb(245, 245, 245);
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    border-radius: 20px;
+}
+
+.voice-sreach-icon {
+    height: 24px;
+    flex:1;
+}
+
+.right-section {
+    width: 200px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-shrink: 0;
+}
+
+.upload {
+    height: 24px;
+}
+
+.youtube-apps {
+    height: 24px;
+}
+
+.notifications-div {
+    position: relative;
+}
+
+.notifications {
+    height: 24px;
+}
+
+.notifications-count {
+    position: absolute;
+    top:0;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-family: Roboto;
+    border-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5px 4px;
+}
+
+.my-profile {
+    height: 32px;
+    border-radius: 16px;
+}
